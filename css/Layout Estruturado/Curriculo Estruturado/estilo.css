@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("imagens/foto-de-fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #222;
+}
+
+.cabecalho {
+    position: relative;
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(16, 37, 66, 0.75);
+    color: white;
+}
+
+.cabecalho-conteudo {
+    position: relative;
+    z-index: 1;
+}
+
+.cabecalho h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.cabecalho p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(4px);
+    border-radius: 18px;
+    padding: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    margin-bottom: 18px;
+    color: #1d3557;
+    border-bottom: 2px solid #d9e6f2;
+    padding-bottom: 8px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.perfil-imagem {
+    flex: 0 0 180px;
+    text-align: center;
+}
+
+.foto-perfil {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #1d3557;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.perfil-info {
+    flex: 1;
+    min-width: 260px;
+}
+
+ul {
+    list-style: none;
+}
+
+.card ul li {
+    margin-bottom: 12px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.redes {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.redes a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1d3557;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.redes a:hover {
+    background-color: #457b9d;
+}
+
+.rodape {
+    text-align: center;
+    padding: 18px;
+    background: rgba(16, 37, 66, 0.85);
+    color: white;
+    margin-top: 30px;
+}
